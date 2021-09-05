@@ -1,0 +1,20 @@
+#justify{ display: flex; justify-content:space-between; text-align: center;
+
+}
+.primer{ height:300px;
+    width: 300px; 
+    
+    background-color: violet;
+    float:left;
+    margin-bottom: 15%;
+}
+.primer::before{ content: "esto es antes"; 
+    color:white;
+    font:300
+
+}
+.Blue{ display: flex; background-color: blue;margin: top 30%; float: left;
+}
+.Blue ol{text-align: left;
+
+}
