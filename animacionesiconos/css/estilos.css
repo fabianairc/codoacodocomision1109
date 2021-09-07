@@ -1,0 +1,48 @@
+body{background-color: rgba(252, 233, 233, 0.61);}
+i{color:white; 
+}
+
+@keyframes mover{
+    from{top: 50px;}
+    to{top:250px;}
+  }
+ #pelota {
+    position:relative;   
+    animation-name:mover;
+    animation-duration:15s;
+}
+
+@keyframes fadeIn {
+    from{opacity:0;}
+    to{opacity: 1;}
+}
+#flecha:hover {
+     left:150px;
+    animation-name:fadeIn;
+    animation-duration: 15s,5s,5s;
+    animation-delay:5s 7s 2s;
+}
+    ul li{
+        display: inline;
+        padding: 10px;
+        background-color: violet;
+        color: white;
+        cursor: pointer;
+    }
+    ul li:hover{
+        animation-name: menu;
+    animation-duration: 2s;}
+   @keyframes menu{
+        0%{padding:10px;
+        background-color:black;
+    color:white;}
+}
+
+    100% {padding:20px;
+    
+    background-color:white;
+    
+}
+
+    }
+
