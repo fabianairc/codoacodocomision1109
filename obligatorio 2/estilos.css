@@ -1,0 +1,14 @@
+.rojo{background-color: red;
+    width: 500px;height: 300px; color: yellow;
+    text-size-adjust: 15pxs;
+    margin: 2%;
+    }
+    
+    #negro{background-color:black;
+        width: 500px; height: 300px; color:white;
+        text-size-adjust: 15pxs;
+        margin: 2%;
+        }
+    
+    #principal{ display:flex; text-align: left; margin: 0%; top: 150px;left: 160px;
+    }
