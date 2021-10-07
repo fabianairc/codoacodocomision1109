@@ -1,10 +1,10 @@
-.partearribar{display: inline-flex; background-color: black;
+.partearribar{background-color: black; display:flex;
 
 }
 #logo{margin: 25,25,25,25; font-size: 25px; color:cornsilk
 
 }
-#bar{padding-top: 32px; padding-left: 485px; margin-right: 7px;
+#bar{padding-top: 30px; padding-left: 450px; margin-right: 20px; padding-right:0%;
 
 }
 #bar.a{text-decoration: underline black
@@ -16,5 +16,17 @@
 .body{background-color: black;
 
 }
-.dos{
+#mg1{filter: brightness(50%); width: 1349px;;}
+
+.parte1{background-color: black; position: relative;
+    display: inline-block;
+
+}
+.textoencima{
+    padding-left:55%;
+    position: absolute;
+    top: 343px;
+    left: 10px;
+    padding-right: 100px;
+    text-align: right;
 }
