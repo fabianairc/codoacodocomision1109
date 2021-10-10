@@ -1,17 +1,16 @@
-.partearribar{background-color: black; display:flex; width: 100%;
+.partearribar{background-color: black; display:flex;
 
 }
-#logo{margin: 25,25,25,25; font-size: 25px; color:cornsilk; flex: 1;
+#logo{margin:0; font-size: 25px; color:cornsilk; flex: 1; padding-right: 0%;
 
 }
-#bar{padding-top: 30px; padding-left: 400px; padding: right 0;; flex: 2;
-
+#bar{padding-top: 30px; flex: 2; margin: 0%; padding-right: 300px;
 }
 
 #sec1{display: flex;
 
 }
-#mg1{filter: brightness(50%); max-width: fit-content;}
+#mg1{filter: brightness(50%);}
 
 .parte1{background-color: black; position: relative;
  flex: 1; width: 100%; max-width: 768;
