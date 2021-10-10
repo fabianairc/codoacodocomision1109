@@ -31,3 +31,25 @@
 
 }
 #ada1{color: white;font-weight: bolder; font-size: 10px; }
+
+#badge2{ color: white;font-weight: bolder; font-size: 10px;
+
+}
+.container{ display:flex; margin:0%; min-width: 2000px;
+
+}
+#carouselExampleSlidesOnly{ width: 1000px; height: 600px;
+
+}
+#carouselside{  padding:0px; background-color: rgb(92, 90, 90); color: rgba(255, 255, 255, 0.842); margin-right: 0px; width: 1000px;
+  height: 600px
+}
+#c1{ width: 1000px; height: 600px
+
+}
+#c2{width: 1000px; height: 600px
+
+}
+#c3{width: 1000px; height: 600px
+
+}
