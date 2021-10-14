@@ -7,23 +7,24 @@
 #bar{padding-top: 30px; flex: 2; margin: 0%; padding-right: 300px;
 }
 
+
 #sec1{display: flex;
 
 }
 #mg1{filter: brightness(50%);}
 
 .parte1{background-color: black; position: relative;
- flex: 1; width: 100%; max-width: 768;
+ flex: 1; width: 100%; max-width: 2000px;
 
 }
 .textoencima{
     flex: 2;
-  
     position: absolute;
-    top: 60%;
-    left: 60%;
-    min-width: none;
-
+    top: 55%;
+    left: 65%;
+    width: 550px;
+   
+  
   display: inline-block;
     
     text-align: right;}
@@ -52,4 +53,6 @@
 }
 #c3{width: 1000px; height: 600px
 
+}
+.foot{ width: 250px; padding-left: 170px; justify-content: center; color: whitesmoke;
 }
