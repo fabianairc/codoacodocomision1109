@@ -1,13 +1,4 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 
-/**
- *
- * @author FabianaUsuario
- */
 public class backendactividad extends javax.swing.JFrame {
 
     /**
@@ -65,6 +56,7 @@ public class backendactividad extends javax.swing.JFrame {
         getContentPane().add(jLabel4);
         jLabel4.setBounds(60, 140, 70, 15);
 
+        usu.setText("dbjfjsdbv");
         usu.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 usuActionPerformed(evt);
