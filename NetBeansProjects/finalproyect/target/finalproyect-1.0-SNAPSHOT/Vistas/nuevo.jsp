@@ -18,11 +18,7 @@
             <div class='row d-flex justify-content-center'>
                 <form class='p-5 w-50'action='Alumnoscontroller?accion=insert'
                       method='POST'>
-                    <div class='mb-3'>
-                        <label for='id' class='form-label'>id</label>
-                        <input type='number' class='form-control' id='id'
-                               nombre='id'/>
-                    </div>
+                  
                     <div class='mb-3'>
                       <label for='nombre' class='form-label'>nombre</label>
                         <input type='text' class='form-control' id='nombre'

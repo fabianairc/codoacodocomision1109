@@ -4,6 +4,9 @@
     Author     : FabianaUsuario
 --%>
 
+<%@page import="modelo.AlumnosDAO"%>
+<%@page import="java.util.List"%>
+<%@page import="modelo.Alumnos"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -30,6 +33,29 @@
                        </tr>
                     </thead>
                     <tbody>
+                        <%
+                        List<Alumnos> resultado = null;
+                        AlumnosDAO alumno =new AlumnosDAO();
+                        resultado = alumno.listarAlumnos();
+                        for(int i = 0; i < resultado.size(); i++){
+                            String ruta = "AlumnosController?accion=modificar&id="+ resultado.get(i).getId();
+                            String rutaE = "AlumnosController?accion=eliminar&id="+ resultado.get(i).getId();
+                           %>
+                           <tr>
+                               <td> <%=resultado.get(i).getId()%></td>
+                               <td> <%=resultado.get(i).getNombre()%></td>
+                               <td> <%=resultado.get(i).getApellido()%></td>
+                               <td> <%=resultado.get(i).getEmail()%></td>
+                               <td> <%=resultado.get(i).getTelefono()%></td>
+                               <td><a class="text-success" href=<%= ruta %>>X</a></td>
+                               <td><a class="text-danger" href=<%= rutaE %>>X</a></td>
+                           </tr>
+                               >>
+                           <%
+                            
+                            }
+                        %>
+                        
                         
                     </tbody>
                     
