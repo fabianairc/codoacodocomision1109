@@ -88,7 +88,7 @@ public class AlumnosDAO {
      public boolean actualizarAlumno (Alumnos alumno){
           PreparedStatement ps;
           try{
-          ps = conexion.prepareStatement("UPDATE finalp SET  nombre=?, apellido=?,emailapellido=?, telefonoapellido=? WHERE id =?");
+          ps = conexion.prepareStatement("UPDATE finalp SET  nombre=?, apellido=?,email=?, telefono=? WHERE id =?");
        ps.setString (1, alumno.getNombre ());
        ps.setString (2, alumno.getApellido ());
        ps.setString (3, alumno.getEmail ());
@@ -109,6 +109,21 @@ public class AlumnosDAO {
           ps.setInt(1, _id);
           ps.execute();
           return true;
+        }catch(SQLException e){
+            System.out.println(e.toString());
+            return false;
+        }
+    }
+      public boolean ingresarUsuario(String usuario, String clave){
+        PreparedStatement ps;
+        ResultSet rs;
+        try{
+            ps = conexion.prepareStatement("SELECT * FROM usuarios WHERE email=?");
+            ps.setString(1, usuario);
+            rs = ps.executeQuery();
+            while(rs.next()){
+                return usuario.equals(rs.getString("email")) && clave.equals(rs.getString("password"));
+            }return false;
         }catch(SQLException e){
             System.out.println(e.toString());
             return false;

@@ -26,33 +26,33 @@
         <h1 class="text-center">Modificar regsitro</h1>
         <div class="container">
             <div class='row d-flex justify-content-center'>
-                <form class='p-5 w-50'action='Alumnoscontroller?accion=insert'
+                <form class='p-5 w-50'action='AlumnosController?accion=actualizar'
                       method='POST'>
                     
                     <div class='mb-3'>
                         <label for='id' class='form-label'>id</label>
                         <input type='hidden' class='form-control' id='id'
-                               nombre='id' value="<%=resultado.getId()%>"/>
+                               name='id' value="<%=resultado.getId()%>"/>
                     </div>
                     <div class='mb-3'>
                       <label for='nombre' class='form-label'>nombre</label>
                         <input type='text' class='form-control' id='nombre'
-                               nombre='nombre' value="<%=resultado.getNombre()%>"/>  
+                               name='nombre' value="<%=resultado.getNombre()%>"/>  
                     </div>
                     <div class='mb-3'>
                         <label for='nombre' class='form-label'>apellido</label>
                         <input type='text' class='form-control' id='apellido'
-                               nombre='apellido'value="<%=resultado.getApellido()%>"/>  
+                              name='apellido'value="<%=resultado.getApellido()%>"/>  
                     </div>
                     <div class='mb-3'>
                         <label for='email' class='form-label'>email</label>
                         <input type='text' class='form-control' id='email'
-                               nombre='email' value="<%=resultado.getEmail()%>"/>  
+                               name='email' value="<%=resultado.getEmail()%>"/>  
                     </div>
                     <div class='mb-3'>
                         <label for='telefono' class='form-label'>telefono</label>
                         <input type='text' class='form-control' id='telefono'
-                               nombre='telefono' value="<%=resultado.getTelefono()%>"/>  
+                              name='telefono' value="<%=resultado.getTelefono()%>"/>  
                     </div>
                     <button type='submit' class='btn btn-primary'>Agregar</button>
             </div>
