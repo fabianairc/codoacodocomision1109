@@ -16,28 +16,33 @@
         <h1 class='text-center'>Agregar alumno</h1>
         <div class="container">
             <div class='row d-flex justify-content-center'>
-                <form class='p-5 w-50'action='Alumnoscontroller?accion=insert'
-                      method='POST'>
-                  
-                    <div class='mb-3'>
+                <form class='p-5 w-50'action='AlumnosController?accion=insert'
+                            method='GET'>
+                     <div class='mb-3'>
                       <label for='nombre' class='form-label'>nombre</label>
                         <input type='text' class='form-control' id='nombre'
-                               nombre='nombre'/>  
+                               name='nombre'/>  
+                    </div>
+                
+                    <div class='mb-3'>
+                      <label for='id class='form-label'>id</label>
+                        <input type='number' class='form-control' id='id'
+                               name='id'/>  
                     </div>
                     <div class='mb-3'>
                         <label for='nombre' class='form-label'>apellido</label>
                         <input type='text' class='form-control' id='apellido'
-                               nombre='apellido'/>  
+                               name='apellido'/>  
                     </div>
                     <div class='mb-3'>
                         <label for='email' class='form-label'>email</label>
                         <input type='text' class='form-control' id='email'
-                               nombre='email'/>  
+                               name='email'/>  
                     </div>
                     <div class='mb-3'>
                         <label for='telefono' class='form-label'>telefono</label>
                         <input type='text' class='form-control' id='telefono'
-                               nombre='telefono'/>  
+                               name='telefono'/>  
                     </div>
                     <button type='submit' class='btn btn-primary'>Agregar</button>
             </div>

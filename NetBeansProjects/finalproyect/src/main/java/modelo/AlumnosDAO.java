@@ -70,12 +70,14 @@ public class AlumnosDAO {
         }
         public boolean insertarAlumno (Alumnos alumno){
           PreparedStatement ps;
+          
           try{
-          ps = conexion.prepareStatement("INSERT INTO finalp  ( nombre, apellido,email, telefono) VALUES(?,?,?,?)");
-       ps.setString (1, alumno.getNombre ());
-       ps.setString (2, alumno.getApellido ());
-       ps.setString (3, alumno.getEmail ());
-       ps.setString (4, alumno.getTelefono ());
+          ps = conexion.prepareStatement("INSERT INTO finalp  (id, nombre, apellido,email, telefono) VALUES(?,?,?,?,?)");
+      ps.setInt (1, alumno.getId ());
+       ps.setString (2, alumno.getNombre ());
+       ps.setString (3, alumno.getApellido ());
+       ps.setString (4, alumno.getEmail ());
+       ps.setString (5, alumno.getTelefono ());
        ps.execute();
        return true;
        

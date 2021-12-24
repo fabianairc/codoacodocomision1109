@@ -19,7 +19,7 @@
         <h1>Listado de alumnos</h1>
         <div class="container">
             <div class="row">
-                <a class='btn btn-primary col-md-4 m-4' href="Alumnoscontroller?accion=nuevo">Agregar alumno</a>
+                <a class='btn btn-primary col-md-4 m-4' href="AlumnosController?accion=nuevo">Agregar alumno</a>
                 <table class='table table-primary'>
                     <thead>
                         <tr>
